@@ -41,18 +41,18 @@ This [**PDF report**](https://github.com/ReflectCode/Library-Firebase/blob/maste
 
 ## Dev Notes
 'Firebase' needs some [configuration](https://firebase.google.com/docs/ios/setup) before running the app  
-1) Register bundle ID, its package name in manifest.xml file e.g. '''com.reflectcode.demo.firebase'''
+1) Register bundle ID, its package name in manifest.xml file e.g. *com.reflectcode.demo.firebase*
 2) Download the configuration file 'GoogleService-Info.plist'	
 3) Copy project to MAC machine
-4) Open terminal and add pod packages using '''% pod install'''
+4) Open terminal and add pod packages using *% pod install*
 5) Open project workspace in Xcode
 6) Drag the 'GoogleService-Info.plist' in project 
 7) Build and run app
 
 Tested with - 
-* MAC OS 10.15.1 Catalina
-* Cocoa pods 1.8.3
-* Xcode 11.1
+[*] MAC OS 10.15.1 Catalina
+[*] Cocoa pods 1.8.3
+[*] Xcode 11.1
 
 -----
 ## Screen recording
