@@ -50,9 +50,9 @@ This [**PDF report**](https://github.com/ReflectCode/Library-Firebase/blob/maste
 7) Build and run app
 
 Tested with - 
-[x] MAC OS 10.15.1 Catalina
-[x] Cocoa pods 1.8.3
-[x] Xcode 11.1
+* MAC OS 10.15.1 Catalina
+* Cocoa pods 1.8.3
+* Xcode 11.1
 
 -----
 ## Screen recording
