@@ -14,13 +14,13 @@
 
 -----
 # ReflectCode Firebase Demo
-[**Firebase**](https://firebase.google.com/) Mobile backend as a service, provides an API to synchronizes application data across devices
+[**Firebase**](https://firebase.google.com/) mobile backend as a service, provides an API to synchronizes application data across devices
 
 ReflectCode supports porting of the basic functionality.
 
 With this demo project RC also added - 
 1) Detailed report of poring
-2) Folder structure in Xcode 
+2) Folder structure in generated Xcode project
 
 
 ## Firebase features supported
@@ -32,7 +32,7 @@ With this demo project RC also added -
 
 ## Statement Estimation
 RC now generates detailed report of its porting process. 
-This [**PDF report**](https://github.com/ReflectCode/UI_Demo/blob/master/FireBaseDemo_RC-Report.pdf) includes graphs and details such as - 
+This [**PDF report**](https://github.com/ReflectCode/Library-Firebase/blob/master/FireBaseDemo_RC-Report.pdf) includes graphs and details such as - 
 * File wise statement count
 * List of external framework included
 * List of ToDo Items
@@ -43,10 +43,10 @@ This [**PDF report**](https://github.com/ReflectCode/UI_Demo/blob/master/FireBas
 
 ## Dev Notes
 'Firebase' needs some configuration before running the app  
-1) Register bundle ID, will be equal to package name in manifest.xml file e.g. com.reflectcode.demo.firebase
+1) Register bundle ID, its package name in manifest.xml file e.g. ''''com.reflectcode.demo.firebase''''
 2) Download the configuration file 'GoogleService-Info.plist'	
 3) Copy project to MAC machine
-4) Open terminal and add pod packages using % pod install
+4) Open terminal and add pod packages using ''''% pod install''''
 5) Open project workspace in Xcode
 6) Drag the 'GoogleService-Info.plist' in project 
 7) Build and run app
