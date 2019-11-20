@@ -38,11 +38,9 @@ This [**PDF report**](https://github.com/ReflectCode/Library-Firebase/blob/maste
 * List of ToDo Items
 * List of APIs which are not ported
 
-<img src="/Visuals/RC Project Report.png" alt="RC Project Report"/>
-
 
 ## Dev Notes
-'Firebase' needs some configuration before running the app  
+'Firebase' needs some [configuration](https://firebase.google.com/docs/ios/setup) before running the app  
 1) Register bundle ID, its package name in manifest.xml file e.g. ''''com.reflectcode.demo.firebase''''
 2) Download the configuration file 'GoogleService-Info.plist'	
 3) Copy project to MAC machine
