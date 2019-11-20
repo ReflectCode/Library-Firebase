@@ -19,8 +19,8 @@
 ReflectCode supports porting of the basic functionality.
 
 With this demo project RC also added - 
-	1) Detailed report of poring
-	2) Folder structure in Xcode 
+1) Detailed report of poring
+2) Folder structure in Xcode 
 
 
 ## Firebase features supported
@@ -42,7 +42,7 @@ This [**PDF report**](https://github.com/ReflectCode/UI_Demo/blob/master/FireBas
 
 
 ## Dev Notes
-* 'Firebase' needs some configuration before running the app  
+'Firebase' needs some configuration before running the app  
 1) Register bundle ID, will be equal to package name in manifest.xml file e.g. com.reflectcode.demo.firebase
 2) Download the configuration file 'GoogleService-Info.plist'	
 3) Copy project to MAC machine
@@ -64,11 +64,18 @@ Tested with -
 -----
 ## Firebase console
 Here is the firebase console after running the app
+
+
+* New users added
 <img src="/Visuals/Users-SignedUp.png" alt="SignedUp Users"/>
+
+
+* New data entry in database
 <img src="/Visuals/Users database.png" alt="Users database"/>
 
+
 -----
-## Firebase console
+## Xcode project structure
 The files in xcode projects are now arranged in sub folders
 
 <img src="/Visuals/RC project folder mapping.png" alt="RC project folder mapping"/>
