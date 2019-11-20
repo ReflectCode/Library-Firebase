@@ -1,0 +1,46 @@
+
+
+/* Class = "UINavigationItem" title="FireBaseDemo" ObjectID = "MainViewController-Nav-ID" */
+"MainViewController-Nav-ID.title"  = "FireBaseDemo";
+
+/* Class = "UILabel" text="Firebase Demo" ObjectID = "RC-ID-1001" */
+"RC-ID-1001.text" = "Firebase Demo";
+
+/* Class = "UILabel" text="User email id" ObjectID = "RC-ID-1002" */
+"RC-ID-1002.text" = "User email id";
+
+/* Class = "UITextField" text="" ObjectID = "fieldEmail" */
+"fieldEmail.text" = "";
+
+/* Class = "UILabel" text="Password" ObjectID = "RC-ID-1004" */
+"RC-ID-1004.text" = "Password";
+
+/* Class = "UITextField" text="" ObjectID = "fieldPassword" */
+"fieldPassword.text" = "";
+
+/* Class = "UIButton" normalTitle="Signup new user" ObjectID = "buttonSignUp" */
+"buttonSignUp.normalTitle" = "Signup new user";
+
+/* Class = "UIButton" disabledTitle="Signup new user" ObjectID = "buttonSignUp" */
+"buttonSignUp.disabledTitle" = "Signup new user";
+
+/* Class = "UIButton" selectedTitle="Signup new user" ObjectID = "buttonSignUp" */
+"buttonSignUp.selectedTitle" = "Signup new user";
+
+/* Class = "UIButton" highlightedTitle="Signup new user" ObjectID = "buttonSignUp" */
+"buttonSignUp.highlightedTitle" = "Signup new user";
+
+/* Class = "UIButton" normalTitle="Signin existing user" ObjectID = "buttonSignIn" */
+"buttonSignIn.normalTitle" = "Signin existing user";
+
+/* Class = "UIButton" disabledTitle="Signin existing user" ObjectID = "buttonSignIn" */
+"buttonSignIn.disabledTitle" = "Signin existing user";
+
+/* Class = "UIButton" selectedTitle="Signin existing user" ObjectID = "buttonSignIn" */
+"buttonSignIn.selectedTitle" = "Signin existing user";
+
+/* Class = "UIButton" highlightedTitle="Signin existing user" ObjectID = "buttonSignIn" */
+"buttonSignIn.highlightedTitle" = "Signin existing user";
+
+/* Class = "UILabel" text="Log" ObjectID = "logMSG" */
+"logMSG.text" = "Log";

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FireBaseDemo-NavControl">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="DNV-xg-evK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FireBaseDemo-NavControl" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ulm-4h-Ru3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" name="colorPrimary"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FireBaseDemo-ToolBar">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="MainViewController" kind="relationship" relationship="rootViewController" id="hC6-UQ-eHy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ccE-g8-4ju" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1122" y="600"/>
+        </scene>
+        <!--MainViewController-->
+        <scene sceneID="MainViewController-Scene">
+            <objects>
+                <viewController storyboardIdentifier="MainViewController" id="MainViewController" userLabel="MainViewController" customClass="MainViewController" customModule="FireBaseDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="Root-View" id="MainView" userLabel="MainView">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" tag="1000" contentMode="scaleToFill" horizontalHuggingPriority="200" verticalHuggingPriority="200" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="RC-ID-1000" userLabel="RC-ID-1000">
+                                <rect key="frame" x="0.0" y="44" width="414" height="273"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1001" contentMode="scaleToFill" horizontalHuggingPriority="350" verticalHuggingPriority="350" text="Firebase Demo" lineBreakMode="middleTruncation" numberOfLines="999" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="RC-ID-1001" userLabel="RC-ID-1001" customClass="RC_UILabel" customModule="FireBaseDemo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="RC-ID-1001-Height-Eq-34"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1002" contentMode="scaleToFill" horizontalHuggingPriority="350" verticalHuggingPriority="350" text="User email id" lineBreakMode="middleTruncation" numberOfLines="999" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="RC-ID-1002" userLabel="RC-ID-1002" customClass="RC_UILabel" customModule="FireBaseDemo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="34" width="414" height="19"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="19" id="RC-ID-1002-Height-Eq-19"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    </label>
+                                    <textField opaque="NO" tag="1003" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minimumFontSize="18" background="RC_text_field_underline" translatesAutoresizingMaskIntoConstraints="NO" id="fieldEmail" userLabel="fieldEmail">
+                                        <rect key="frame" x="0.0" y="53" width="414" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="fieldEmail-Height-Eq-20"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" spellCheckingType="yes"/>
+                                    </textField>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1004" contentMode="scaleToFill" horizontalHuggingPriority="350" verticalHuggingPriority="350" text="Password" lineBreakMode="middleTruncation" numberOfLines="999" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="RC-ID-1004" userLabel="RC-ID-1004" customClass="RC_UILabel" customModule="FireBaseDemo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="73" width="414" height="19"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="19" id="RC-ID-1004-Height-Eq-19"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    </label>
+                                    <textField opaque="NO" tag="1005" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minimumFontSize="18" background="RC_text_field_underline" translatesAutoresizingMaskIntoConstraints="NO" id="fieldPassword" userLabel="fieldPassword">
+                                        <rect key="frame" x="0.0" y="92" width="414" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="fieldPassword-Height-Eq-20"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" spellCheckingType="yes"/>
+                                    </textField>
+                                    <button opaque="NO" tag="1006" contentMode="scaleToFill" horizontalHuggingPriority="350" verticalHuggingPriority="350" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="buttonSignUp" userLabel="buttonSignUp">
+                                        <rect key="frame" x="0.0" y="112" width="414" height="43"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="144" id="buttonSignUp-Width-Eq-144"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <inset key="contentEdgeInsets" minX="13" minY="13" maxX="13" maxY="13"/>
+                                        <state key="normal" title="Signup new user" backgroundImage="RC_btn_default_normal">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="disabled" title="Signup new user" backgroundImage="RC_btn_default_normal_disable">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.53333333329999999" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="selected" title="Signup new user" backgroundImage="RC_btn_default_selected">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="highlighted" title="Signup new user" backgroundImage="RC_btn_default_selected">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="SignupClick:" destination="MainViewController" eventType="touchUpInside" id="buttonSignUp-SignupClick"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1007" contentMode="scaleToFill" horizontalHuggingPriority="350" verticalHuggingPriority="350" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="buttonSignIn" userLabel="buttonSignIn">
+                                        <rect key="frame" x="0.0" y="155" width="414" height="43"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="172" id="buttonSignIn-Width-Eq-172"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <inset key="contentEdgeInsets" minX="13" minY="13" maxX="13" maxY="13"/>
+                                        <state key="normal" title="Signin existing user" backgroundImage="RC_btn_default_normal">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="disabled" title="Signin existing user" backgroundImage="RC_btn_default_normal_disable">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.53333333329999999" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="selected" title="Signin existing user" backgroundImage="RC_btn_default_selected">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="highlighted" title="Signin existing user" backgroundImage="RC_btn_default_selected">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="SigninClick:" destination="MainViewController" eventType="touchUpInside" id="buttonSignIn-SigninClick"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1009" contentMode="scaleToFill" verticalHuggingPriority="350" text="Log" lineBreakMode="middleTruncation" numberOfLines="999" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="logMSG" userLabel="logMSG" customClass="RC_UILabel" customModule="FireBaseDemo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="198" width="414" height="25"/>
+                                        <color key="backgroundColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="logMSG-Height-Eq-19"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    </label>
+                                    <activityIndicatorView hidden="YES" tag="1008" contentMode="scaleToFill" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="progress-circle" userLabel="progress-circle">
+                                        <rect key="frame" x="0.0" y="223" width="414" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="progress-circle-Height-Eq-50"/>
+                                        </constraints>
+                                        <color key="color" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="fieldEmail" firstAttribute="width" secondItem="RC-ID-1000" secondAttribute="width" id="fieldEmail-EqWidth-RC-ID-1000" userLabel="fieldEmail-EqWidth-RC-ID-1000"/>
+                                    <constraint firstItem="fieldPassword" firstAttribute="width" secondItem="RC-ID-1000" secondAttribute="width" id="fieldPassword-EqWidth-RC-ID-1000" userLabel="fieldPassword-EqWidth-RC-ID-1000"/>
+                                    <constraint firstItem="logMSG" firstAttribute="width" secondItem="RC-ID-1000" secondAttribute="width" id="logMSG-EqWidth-RC-ID-1000" userLabel="logMSG-EqWidth-RC-ID-1000"/>
+                                    <constraint firstItem="progress-circle" firstAttribute="width" secondItem="RC-ID-1000" secondAttribute="width" id="progress-circle-EqWidth-RC-ID-1000" userLabel="progress-circle-EqWidth-RC-ID-1000"/>
+                                </constraints>
+                            </stackView>
+                            <view clipsSubviews="YES" tag="101600222" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" restorationIdentifier="Footer-View" translatesAutoresizingMaskIntoConstraints="NO" id="Footer-View-ID" userLabel="Footer-View">
+                                <rect key="frame" x="0.0" y="736" width="414" height="0.0"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" id="Footer-View-Height"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="RC-ID-1000" firstAttribute="leading" secondItem="MainView-safeArea" secondAttribute="leading" id="RC-ID-1000-matchLeading-MainView-safeArea" userLabel="RC-ID-1000-matchLeading-MainView-safeArea"/>
+                            <constraint firstItem="RC-ID-1000" firstAttribute="top" secondItem="MainView-safeArea" secondAttribute="top" id="RC-ID-1000-matchTop-MainView-safeArea" userLabel="RC-ID-1000-matchTop-MainView-safeArea"/>
+                            <constraint firstItem="RC-ID-1000" firstAttribute="trailing" secondItem="MainView-safeArea" secondAttribute="trailing" id="RC-ID-1000-matchTrailing-MainView-safeArea" userLabel="RC-ID-1000-matchTrailing-MainView-safeArea"/>
+                            <constraint firstItem="Footer-View-ID" firstAttribute="bottom" secondItem="MainView-safeArea" secondAttribute="bottom" id="footer-match-botton"/>
+                            <constraint firstItem="Footer-View-ID" firstAttribute="leading" secondItem="MainView-safeArea" secondAttribute="leading" id="footer-match-leading"/>
+                            <constraint firstItem="Footer-View-ID" firstAttribute="top" relation="greaterThanOrEqual" secondItem="RC-ID-1000" secondAttribute="bottom" priority="750" id="footer-match-top-RC-ID-1000" userLabel="footer-match-top-RC-ID-1000"/>
+                            <constraint firstItem="Footer-View-ID" firstAttribute="trailing" secondItem="MainView-safeArea" secondAttribute="trailing" id="footer-match-trailing"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="MainView-safeArea"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="FireBaseDemo" id="MainViewController-Nav-ID"/>
+                    <connections>
+                        <outlet property="buttonSignInOutlet" destination="buttonSignIn" id="buttonSignIn-Outlet1"/>
+                        <outlet property="buttonSignUpOutlet" destination="buttonSignUp" id="buttonSignUp-Outlet1"/>
+                        <outlet property="fieldEmailOutlet" destination="fieldEmail" id="fieldEmail-Outlet1"/>
+                        <outlet property="fieldPasswordOutlet" destination="fieldPassword" id="fieldPassword-Outlet1"/>
+                        <outlet property="logMSGOutlet" destination="logMSG" id="logMSG-Outlet1"/>
+                        <outlet property="progress_circleOutlet" destination="progress-circle" id="C5Y-gd-Jte"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-372" y="600"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="RC_btn_default_normal" width="12" height="24"/>
+        <image name="RC_btn_default_normal_disable" width="12" height="24"/>
+        <image name="RC_btn_default_selected" width="12" height="24"/>
+        <image name="RC_text_field_underline" width="24" height="24"/>
+        <namedColor name="colorPrimary">
+            <color red="0.0" green="0.52156862745098043" blue="0.46666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
